@@ -18,5 +18,14 @@
     <ClCompile Include="week2_lab.c">
       <Filter>소스 파일</Filter>
     </ClCompile>
+    <ClCompile Include="assignment01.c">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="hello.c">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="ex8-13.c">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
