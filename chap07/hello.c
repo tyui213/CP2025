@@ -10,13 +10,12 @@ void* swapDouble(double* pa, double* pb);//전방선언
 void print_array_double(double arr[], int sz);//전방선언
 void printArryDouble(double* arr, int sz);//전방선언
 int test_print_arry();//전방선언
-
-
+int test_function_pointer();//전방선언
 int main()
 {
 	//test_swap;
 	test_print_arry();
-
+	test_function_pointer();
 	return 0;
 }
 
@@ -101,4 +100,41 @@ void printArryDouble(double* arr, int sz)
 		printf("% lf", *arr);
 	}
 	printf("\n");
+}
+
+int test_function_pointer()
+{
+	double (*pfunc)(double, double) = NULL;
+	double result = 0;
+
+	pfunc = add;
+
+	printf("add(3, 4) = %lf\n", add(3, 0, 4.0));
+
+	add(3, 4);
+
+	double result = (*pfunc) (3.0, 4.0); //7.0?
+}
+
+//정수 덧셈 결관 반환
+//입력: 두 실수 
+//출력: 더한 값
+double add(double a, double b)
+{
+	return a + b;
+}
+//기능 정수 뺄셈
+//입력: 두 정수
+//출력: 뺀 값
+double sub(double a, double b)
+{
+	return a - b;
+}
+
+//기능: 정수곱셈
+//입력: 두 정수
+//출력: 곱셈값
+double mul(double a, double b)
+{
+	return a * b;
 }
