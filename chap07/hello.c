@@ -1,4 +1,11 @@
+/*
+이름: 최정민
+날짜: 0917
+내용: 8장실습
+*/
+
 #include<stdio.h>
+
 void* swapDouble(double* pa, double* pb);//전방선언
 void print_array_double(double arr[], int sz);//전방선언
 void printArryDouble(double* arr, int sz);//전방선언
@@ -69,9 +76,6 @@ int test_print_arry()
 	
 	return 0;
 }
-
-
-
 
 
 // 기능: 1차원 실수 배열을 출력한다.
